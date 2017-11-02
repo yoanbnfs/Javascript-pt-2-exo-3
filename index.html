@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Exercice 3</title>
+</head>
+<body>
+  <form>
+    <label for="nom">Votre nom  : </label><input type="text" name="nom" id="nom" />
+    <script type="text/javascript">
+    var pressKey = document.getElementById('nom');
+      pressKey.addEventListener('keyup', onkeypress);
+        function onkeypress() {
+          alert(pressKey.value);
+        }
+    </script>
+  </form>
+</body>
+</html>
